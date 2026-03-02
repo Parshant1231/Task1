@@ -1,0 +1,16 @@
+# Ignore all .tfvars files (contains sensitive data)
+*.tfvars
+*.tfvars.json
+
+# Ignore specific local override files
+terraform.tfvars
+testing.tfvars
+
+# Ignore Terraform state files (contains secrets in plain text!)
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Ignore crash logs
+crash.log
